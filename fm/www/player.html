@@ -1,0 +1,95 @@
+<div data-bb-type="screen" data-bb-indicator="false" data-bb-scroll-effect="on">
+    <div data-bb-type="action-bar" id="ab">
+        <div data-bb-type="action" data-bb-style="button" data-bb-img="img/ic_previous.png" onclick="UI.prev()">上一首</div>
+        <div data-bb-type="action" data-bb-style="button" data-bb-img="img/ic_play.png" onclick="UI.playtoggle()" id="playbutton">播放</div>
+        <div data-bb-type="action" data-bb-style="button" data-bb-img="img/ic_next.png" onclick="UI.next()">下一首</div>
+        <!--
+        <div data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/ic_add_favorite.png">加入收藏夹</div>
+        -->
+        <div data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/ic_play.png" onclick="UI.playtoggle()">播放/暂停</div>
+        <div data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/ic_previous.png" onclick="UI.prev()">上一首</div>
+        <div data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/ic_next.png" onclick="UI.next()">下一首</div>
+        <div data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/ic_download.png" onclick="UI.download()" id="menudownload">下载当前音乐</div>
+        <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" id="playing" onclick="Tab.show('playing')" data-bb-img="img/ic_play.png" data-bb-accent-text="正在播放" data-bb-selected="true">正在播放</div>
+        <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" id="channel" onclick="Tab.show('channel')" data-bb-img="img/ic_view_list.png" data-bb-accent-text="当前频道">当前频道</div>
+        <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" id="playlist" onclick="Tab.show('playlist')" data-bb-img="img/ic_view_details.png" data-bb-accent-text="查看当前播放列表">播放列表</div>
+        <!--
+        <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" id="history" onclick="Tab.show('history')" data-bb-img="img/ic_history.png" data-bb-accent-text="">历史记录</div>
+        -->
+    </div>
+    <div data-bb-type="menu">
+        <div data-bb-type="menu-item" data-bb-img="img/info.png" data-bb-pin="left" onclick="Menu.about()">关于</div>
+        <div data-bb-type="menu-item" data-bb-img="img/star.png" onclick="Menu.rate()">评价</div>
+        <div data-bb-type="menu-item" data-bb-img="img/email.png" onclick="Menu.feedback()">反馈</div>
+        <div data-bb-type="menu-item" data-bb-img="img/settings.png" data-bb-pin="right" onclick="Menu.settings()">设置</div>
+    </div>
+    <div data-bb-type="title" data-bb-caption="" data-bb-accent-text="" data-bb-img="img/114.png" id="titlebar" onclick="Tab.switchTo('playing')"></div>
+    <div class="playing panel">
+        <div id="actind">
+            <div data-bb-type="activity-indicator" data-bb-size="medium" style="margin: 200px auto 10px"></div>
+            <div style="margin: 10px auto"> 如果长时间没有响应，请检查你的网络连接。 </div>
+        </div>
+        <div data-bb-type="scroll-panel" id="lyrics">
+
+        </div>
+    </div>
+    <div class="channel invisable panel">
+        <div data-bb-type="scroll-panel" id="channelpanel">
+            <div data-bb-type="image-list" data-bb-images="none" data-bb-header-justify="left" data-bb-style="arrowbuttons">
+                <div data-bb-type="header">推荐频道</div>
+                <div data-bb-type="item" data-bb-title="BillBoard" onclick="ChannelManager.switchto(4)"></div>
+                <div data-bb-type="item" data-bb-title="KTV金曲" onclick="ChannelManager.switchto(9)"></div>
+                <div data-bb-type="item" data-bb-title="中国好声音" onclick="ChannelManager.switchto(5)"></div>
+                <div data-bb-type="item" data-bb-title="开车" onclick="ChannelManager.switchto(17)"></div>
+                <div data-bb-type="item" data-bb-title="成名曲" onclick="ChannelManager.switchto(24)"></div>
+                <div data-bb-type="item" data-bb-title="温暖冬日" onclick="ChannelManager.switchto(23)"></div>
+                <div data-bb-type="item" data-bb-title="热歌" onclick="ChannelManager.switchto(26)"></div>
+                <div data-bb-type="item" data-bb-title="网络红歌" onclick="ChannelManager.switchto(15)"></div>
+                <div data-bb-type="header">时光频道</div>
+                <div data-bb-type="item" data-bb-title="70后" onclick="ChannelManager.switchto(6)"></div>
+                <div data-bb-type="item" data-bb-title="80后" onclick="ChannelManager.switchto(8)"></div>
+                <div data-bb-type="item" data-bb-title="90后" onclick="ChannelManager.switchto(7)"></div>
+                <div data-bb-type="item" data-bb-title="经典老歌" onclick="ChannelManager.switchto(25)"></div>
+                <div data-bb-type="item" data-bb-title="火爆新歌" onclick="ChannelManager.switchto(20)"></div>
+                <div data-bb-type="item" data-bb-title="儿歌" onclick="ChannelManager.switchto(21)"></div>
+                <div data-bb-type="item" data-bb-title="旅行" onclick="ChannelManager.switchto(19)"></div>
+                <div data-bb-type="item" data-bb-title="夜店" onclick="ChannelManager.switchto(13)"></div>
+                <div data-bb-type="header">风格频道</div>
+                <div data-bb-type="item" data-bb-title="流行" onclick="ChannelManager.switchto(11)"></div>
+                <div data-bb-type="item" data-bb-title="摇滚" onclick="ChannelManager.switchto(16)"></div>
+                <div data-bb-type="item" data-bb-title="民谣" onclick="ChannelManager.switchto(12)"></div>
+                <div data-bb-type="item" data-bb-title="轻音乐" onclick="ChannelManager.switchto(10)"></div>
+                <div data-bb-type="item" data-bb-title="小清新" onclick="ChannelManager.switchto(22)"></div>
+                <div data-bb-type="item" data-bb-title="中国风" onclick="ChannelManager.switchto(3)"></div>
+                <div data-bb-type="item" data-bb-title="DJ舞曲" onclick="ChannelManager.switchto(2)"></div>
+                <div data-bb-type="item" data-bb-title="电影原声" onclick="ChannelManager.switchto(18)"></div>
+                <div data-bb-type="header">心情频道</div>
+                <div data-bb-type="item" data-bb-title="轻松假日" onclick="ChannelManager.switchto(28)"></div>
+                <div data-bb-type="item" data-bb-title="快乐旋律" onclick="ChannelManager.switchto(14)"></div>
+                <div data-bb-type="item" data-bb-title="甜蜜感受" onclick="ChannelManager.switchto(31)"></div>
+                <div data-bb-type="item" data-bb-title="寂寞电波" onclick="ChannelManager.switchto(1)"></div>
+                <div data-bb-type="item" data-bb-title="单身情歌" onclick="ChannelManager.switchto(27)"></div>
+                <div data-bb-type="item" data-bb-title="舒缓节奏" onclick="ChannelManager.switchto(30)"></div>
+                <div data-bb-type="item" data-bb-title="慵懒午后" onclick="ChannelManager.switchto(0)"></div>
+                <div data-bb-type="item" data-bb-title="伤感调频" onclick="ChannelManager.switchto(29)"></div>
+                <div data-bb-type="header">语种频道</div>
+                <div data-bb-type="item" data-bb-title="华语" onclick="ChannelManager.switchto(33)"></div>
+                <div data-bb-type="item" data-bb-title="欧美" onclick="ChannelManager.switchto(34)"></div>
+                <div data-bb-type="item" data-bb-title="日语" onclick="ChannelManager.switchto(35)"></div>
+                <div data-bb-type="item" data-bb-title="韩语" onclick="ChannelManager.switchto(32)"></div>
+                <div data-bb-type="item" data-bb-title="粤语" onclick="ChannelManager.switchto(36)"></div>
+            </div></div>
+    </div>
+    <div class="fav invisable panel">
+        <div data-bb-type="scroll-panel" id="favpanel">
+            <div data-bb-type="image-list" data-bb-images="none" data-bb-header-justify="left" data-bb-header-style="solid" data-bb-style="removebuttons">
+            </div></div>
+    </div>
+    <div class="playlist invisable panel">
+        <div data-bb-type="scroll-panel" id="playlistpanel">
+            <div id="playlistlist" data-bb-type="image-list" data-bb-images="none" data-bb-header-justify="left" data-bb-header-style="solid" data-bb-style="removebuttons">
+            </div>
+        </div>
+        <div data-bb-type="activity-indicator" data-bb-size="medium" style="margin:200px auto" id="plind"></div>
+    </div>
+</div>
