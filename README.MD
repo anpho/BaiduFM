@@ -1,11 +1,11 @@
-°Ù¶ÈËæĞÄÌı for BlackBerry 10
+ç™¾åº¦éšå¿ƒå¬ for BlackBerry 10
 ===========================
 
-2016.7.7 ±¾Ó¦ÓÃÈ«ÃæÃâ·Ñ£¬¿ªÔ´µÄ´úÂëÖĞÒÑ¾­×¢ÊÍµôÁË¡°½âËø¡±Ïà¹ØµÄ´úÂë¡£
+2016.7.7 æœ¬åº”ç”¨å…¨é¢å…è´¹ï¼Œå¼€æºçš„ä»£ç ä¸­å·²ç»æ³¨é‡Šæ‰äº†â€œè§£é”â€ç›¸å…³çš„ä»£ç ã€‚
 
-±¾ÏîÄ¿Ê¹ÓÃ[BlackBerry WebWorks](https://developer.blackberry.com/html5/) ¹¤¾ß±àÒë£¬½çÃæ²¿·ÖÓÃÁË [bbui.js](https://github.com/blackberry/bbUI.js) À´Õ¹ÏÖÔ­ÉúÑùÊ½¡£±¾ÏîÄ¿ÖĞÊ¹ÓÃµÄ²å¼şÇåµ¥ÈçÏÂ£º
+æœ¬é¡¹ç›®ä½¿ç”¨[BlackBerry WebWorks](https://developer.blackberry.com/html5/) å·¥å…·ç¼–è¯‘ï¼Œç•Œé¢éƒ¨åˆ†ç”¨äº† [bbui.js](https://github.com/blackberry/bbUI.js) æ¥å±•ç°åŸç”Ÿæ ·å¼ã€‚æœ¬é¡¹ç›®ä¸­ä½¿ç”¨çš„æ’ä»¶æ¸…å•å¦‚ä¸‹ï¼š
 
-¡¤¡¤¡¤
+```
 com.blackberry.app 1.0.0 "BlackBerry 10 Application APIs"
 com.blackberry.bbm.platform 1.0.0 "BlackBerry 10 BBM Platform APIs"
 com.blackberry.community.preventsleep 1.0.0 "Prevent Sleep"
@@ -23,12 +23,12 @@ com.blackberry.ui.toast 1.0.0 "BlackBerry 10 Toast APIs"
 com.blackberry.utils 1.0.0 "BlackBerry 10 Utilities Library"
 org.apache.cordova.network-information 0.2.6 "Network Information"
 org.apache.cordova.splashscreen 0.2.6 "Splashscreen"
-¡¤¡¤¡¤
+```
 
 ## HOW TO BUILD
 
-ÓÉÓÚwebworks / cordova´øÓĞ´óÁ¿¿ò¼ÜÄÚÈİ£¬±¾repoÄÚµÄÄÚÈİ½öÎªÏîÄ¿ÄÚÈİ£¬cloneµ½±¾µØºó£¬ĞèÒªÊ¹ÓÃwebworks create´´½¨ÏîÄ¿£¬ÊÖ¶¯Ìí¼ÓÉÏÃæËùÁĞ²å¼ş£¬È»ºóÔÚÏîÄ¿Ä¿Â¼ÏÂÊ¹ÓÃ`webworks build`µÈÃüÁî½øĞĞ±àÒë¡¢µ÷ÊÔµÈ£¬ÓĞ¹Øwebworks¹¤¾ßµÄÊ¹ÓÃËµÃ÷£¬Çë²Î¼û[BlackBerry WebWorks](https://developer.blackberry.com/html5/) ÖĞµÄÏà¹ØÄÚÈİ¡£
+ç”±äºwebworks / cordovaå¸¦æœ‰å¤§é‡æ¡†æ¶å†…å®¹ï¼Œæœ¬repoå†…çš„å†…å®¹ä»…ä¸ºé¡¹ç›®å†…å®¹ï¼Œcloneåˆ°æœ¬åœ°åï¼Œéœ€è¦ä½¿ç”¨`webworks create`åˆ›å»ºé¡¹ç›®ï¼Œæ‰‹åŠ¨æ·»åŠ ä¸Šé¢æ‰€åˆ—æ’ä»¶ï¼Œç„¶ååœ¨é¡¹ç›®ç›®å½•ä¸‹ä½¿ç”¨`webworks build`ç­‰å‘½ä»¤è¿›è¡Œç¼–è¯‘ã€è°ƒè¯•ç­‰ï¼Œæœ‰å…³webworkså·¥å…·çš„ä½¿ç”¨è¯´æ˜ï¼Œè¯·å‚è§[BlackBerry WebWorks](https://developer.blackberry.com/html5/) ä¸­çš„ç›¸å…³å†…å®¹ã€‚
 
 ## ABOUT LICENSE
 
-±¾ÏîÄ¿¿ªÔ´µ«·ÇÃâ·Ñ£¬Èç¹ûÄã½«ÆäÓÃÓÚÊÕ·ÑÏîÄ¿£¬ÇëÁªÏµÔ­×÷Õß[EMAIL](mailto:anphorea@gmail.com)ÒÔÈ¡µÃÊÚÈ¨£»ÈçÓÃÓÚÃâ·ÑÏîÄ¿£¬Ğè±£³Ö¿ªÔ´²¢ÔÚÏîÄ¿ÄÚ°üº¬±¾ÎÄ¼ş¡£
+æœ¬é¡¹ç›®å¼€æºä½†éå…è´¹ï¼Œå¦‚æœä½ å°†å…¶ç”¨äºæ”¶è´¹é¡¹ç›®ï¼Œè¯·è”ç³»åŸä½œè€…[EMAIL](mailto:anphorea@gmail.com)ä»¥å–å¾—æˆæƒï¼›å¦‚ç”¨äºå…è´¹é¡¹ç›®ï¼Œéœ€ä¿æŒå¼€æºå¹¶åœ¨é¡¹ç›®å†…åŒ…å«æœ¬æ–‡ä»¶ã€‚
