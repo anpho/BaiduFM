@@ -1,0 +1,116 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "www/config.xml": {
+                "parents": {
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"com.blackberry.app\" value=\"com.blackberry.app\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\" value=\"SplashScreen\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\" value=\"NetworkStatus\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.utils\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.ui.toast\" value=\"com.blackberry.ui.toast\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.ui.dialog\" value=\"com.blackberry.ui.dialog\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.ui.cover\" value=\"com.blackberry.ui.cover\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.system\" value=\"com.blackberry.system\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.push\" value=\"com.blackberry.push\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.io\" value=\"com.blackberry.io\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.invoke\" value=\"com.blackberry.invoke\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.invoke.card\" value=\"com.blackberry.invoke.card\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.connection\" value=\"com.blackberry.connection\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/widget/rim:permissions": [
+                        {
+                            "xml": "<rim:permit>run_when_backgrounded</rim:permit>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.blackberry.app": {
+            "PACKAGE_NAME": "anpho.baidufm"
+        },
+        "org.apache.cordova.splashscreen": {
+            "PACKAGE_NAME": "anpho.baidufm"
+        },
+        "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "anpho.baidufm"
+        },
+        "com.blackberry.utils": {
+            "PACKAGE_NAME": "anpho.baidufm"
+        },
+        "com.blackberry.ui.toast": {
+            "PACKAGE_NAME": "anpho.baidufm"
+        },
+        "com.blackberry.ui.dialog": {
+            "PACKAGE_NAME": "anpho.baidufm"
+        },
+        "com.blackberry.ui.cover": {
+            "PACKAGE_NAME": "anpho.baidufm"
+        },
+        "com.blackberry.system": {
+            "PACKAGE_NAME": "anpho.baidufm"
+        },
+        "com.blackberry.push": {
+            "PACKAGE_NAME": "anpho.baidufm"
+        },
+        "com.blackberry.io": {
+            "PACKAGE_NAME": "anpho.baidufm"
+        },
+        "com.blackberry.invoke": {
+            "PACKAGE_NAME": "anpho.baidufm"
+        },
+        "com.blackberry.invoke.card": {
+            "PACKAGE_NAME": "anpho.baidufm"
+        },
+        "com.blackberry.connection": {
+            "PACKAGE_NAME": "anpho.baidufm"
+        }
+    },
+    "dependent_plugins": {}
+}

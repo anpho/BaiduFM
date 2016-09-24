@@ -1,0 +1,51 @@
+<div data-bb-type="screen">
+    <div data-bb-type="action-bar" data-bb-back-caption="返回"></div>
+    <!-- div data-bb-type="round-panel"> 
+        <div data-bb-type="panel-header">网络设置</div>
+        <div class="twocolumn">
+            <div>使用移动网络时提示</div>
+            <div><div id="wifinotify" data-bb-type="toggle" data-bb-checked="true" data-bb-on="|" data-bb-off="O" onchange=""></div></div>
+        </div>
+        <div style="font-size: 0.8em">由于本应用在使用时会产生大量的网络流量，该选项可以在手机切换至移动网络时显示一条提示消息。</div>
+    </div -->
+    <div data-bb-type="round-panel"> 
+        <div data-bb-type="panel-header">音质选择</div>
+        <div class="">
+            <div>播放音质选择</div>
+            <div>
+                <select data-bb-style="stretch" onchange="Menu.playbackratechangeHandler(this)" id="playbackrate">
+                    <option value="64" selected data-bb-accent-text="用于低速网络或试听使用">基本（64kbps）</option>
+                    <option value="128" data-bb-accent-text="推荐使用">流畅（128kbps）</option>
+                    <option value="192" data-bb-accent-text="请注意你的带宽和数据使用情况">高清（192kbps）</option>
+                </select>
+            </div>
+            <div style="font-size:0.8em">
+                <p>
+                    此处设置修改后，需要切换频道或重启应用后才能生效。
+                </p>
+            </div>
+        </div>
+        <div class="">
+            <div style="background: url(img/pro.png) no-repeat left;padding-left:100px;">下载音质选择</div>
+            <div>
+                <select data-bb-style="stretch" onchange="Menu.downloadratechangeHandler(this)" id="downloadrate">
+                    <option value="64">基本（64kbps）</option>
+                    <option value="128">流畅（128kbps）</option>
+                    <option value="192">高清（192kbps）</option>
+                    <option value="320">最佳（320kbps）</option>
+                </select>
+            </div>
+        </div>
+        <div style="font-size: 0.8em"><p>设置下载音乐时的采样率。</p></div>
+        <div style="font-size: 0.8em"><p>以上选项均为“优先”选项，即如果某曲目没有320kbps的源，则自动降级为192kbps，或者更低。</p></div>
+    </div>
+    <div data-bb-type="round-panel" id="proexp">
+	<div style="font-size: 0.8em"><p>自2016年7月7日起，本应用调整为全免费应用，感谢过去几年里通过购买、捐赠等方式支持我开发的莓友们，没有你们就没有这些app。</p></div>
+        <div data-bb-type="panel-header">解锁下载功能</div>
+        <div data-bb-type="activity-indicator" data-bb-size="medium" style="margin: 100px auto;display: none" id="unlockind"></div>
+        <div style="display:none" data-bb-type="button" data-bb-style="stretch" data-bb-img="img/ic_buy.png" onclick="UI.purchase()">解锁下载功能，现只需USD0.99</div>
+        <div style="display:none"  data-bb-type="button" data-bb-style="stretch" data-bb-img="img/ic_reload.png" onclick="UI.refresh()">刷新支付状态</div>
+        <div style="display:none"  data-bb-type="button" data-bb-style="stretch" data-bb-img="img/ic_lock.png" onclick="UI.unlock()">我有解锁码</div>
+        <div style="display:none"  data-bb-type="button" data-bb-style="stretch" data-bb-img="img/ic_lock.png" id="showcode" ></div>
+    </div>
+</div>

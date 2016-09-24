@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="anpho.baidufm" version="0.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:rim="http://www.blackberry.com/ns/widgets">
+    <feature name="com.blackberry.app" value="com.blackberry.app" />
+    <feature name="SplashScreen" value="SplashScreen" />
+    <feature name="NetworkStatus" value="NetworkStatus" />
+    <feature name="com.blackberry.utils" />
+    <feature name="com.blackberry.ui.toast" value="com.blackberry.ui.toast" />
+    <feature name="com.blackberry.ui.dialog" value="com.blackberry.ui.dialog" />
+    <feature name="com.blackberry.ui.cover" value="com.blackberry.ui.cover" />
+    <feature name="com.blackberry.system" value="com.blackberry.system" />
+    <feature name="com.blackberry.push" value="com.blackberry.push" />
+    <feature name="com.blackberry.io" value="com.blackberry.io" />
+    <feature name="com.blackberry.invoke" value="com.blackberry.invoke" />
+    <feature name="com.blackberry.invoke.card" value="com.blackberry.invoke.card" />
+    <feature name="com.blackberry.connection" value="com.blackberry.connection" />
+    <rim:permissions>
+        <rim:permit>run_when_backgrounded</rim:permit>
+    </rim:permissions>
+    <name>MusicBox</name>
+    <name xml:lang="zh-CN">音乐随心听</name>
+    <description>Free online Music</description>
+    <description xml:lang="zh-CN">百度音乐随心听客户端</description>
+    <author email="anphorea@gmail.com" href="http://anpho.github.io">anpho</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="ChildBrowser" value="enable" />
+    <preference name="DiskCache" value="enable" />
+    <preference name="HideKeyboardFormAccessoryBar" value="disable" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="PopupBlocker" value="disable" />
+    <preference name="WebSecurity" value="disable" />
+    <icon src="img/114.png" />
+    <rim:splash src="img/dot.png" />
+</widget>
